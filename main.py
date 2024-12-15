@@ -27,7 +27,7 @@ def tratamento_data():
             return  # Não fazer nada se os dados já estiverem no banco
 
     # Caso contrário, carregar do Excel e salvar no SQLite
-    violencia_dm = pd.read_excel('/mnt/A06815BA68159060/MESTRADO/TAC/MICRODADOS_DE_VIOLÊNCIA_DOMÉSTICA_JAN_2015_A_AGO_2024.xlsx')
+    violencia_dm = pd.read_excel('MICRODADOS_DE_VIOLÊNCIA_DOMÉSTICA_JAN_2015_A_AGO_2024.xlsx')
     pd.set_option('display.max_columns', 100)
     violencia_dm = violencia_dm.rename(columns={
         'MUNICÍPIO DO FATO': 'MUNICIPIO',
