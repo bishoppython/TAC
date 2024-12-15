@@ -52,8 +52,6 @@ tab = st.sidebar.radio("Selecione a análise:", ["About", "Dados de Violência D
 if tab == "About":
     about()
 elif tab == "Dados de Violência Doméstica":
-    violencia_dm = get_data_from_sqlite("SELECT * FROM violencia_domestica")
-    st.subheader("Dados de Violência Doméstica")
-    st.dataframe(violencia_dm.head(10))
+    visualizacao()
 elif tab == "Probabilidades Futuras":
     predition()
