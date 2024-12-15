@@ -3,7 +3,7 @@ import sqlite3
 import streamlit as st
 from visualizacao import *
 from predicao import *
-from about import about
+from about import *
 
 # Função para tratamento de dados
 def tratamento_data():
